@@ -10,7 +10,7 @@ Neste trabalho, comparamos as matrículas da educação especial em **2015, 2020
 
 ## Fontes
 
-- Usamos as três edições do Inep para comparar as matrículas. [Sinopses Estatísticas da Educação Básica de 2015, 2020 e 2025](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/sinopses-estatisticas/educacao-basica) Nota: Como o tamanho dos arquivos é muito grande, é recomendada a instalação dos três arquivos pelo site do INEP e adicionados ao mesmo diretório em que o jupyter notebook irá trabalhar. O github não aguente mais que 25 MB!
+- Usamos as três edições do Inep para comparar as matrículas. [Sinopses Estatísticas da Educação Básica de 2015, 2020 e 2025](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/sinopses-estatisticas/educacao-basica) Nota: Como o tamanho dos arquivos é muito grande, é recomendada a instalação dos três arquivos pelo site do INEP e adicionados ao mesmo diretório em que o jupyter notebook irá trabalhar. O github não aguente mais que 25 MB! Assim, baixe as três tabelas e coloque na mesma pasta do repositório no seu computador para que os dados sejam devidamente importados.
 - Na pergunta 6, usamos os percentuais por estado da Tabela 3 (p. 35) e do Gráfico 18 (p. 67). [Censo Demográfico 2022 — IBGE](https://www.ibge.gov.br/biblioteca/visualizacao/livros/liv102178.pdf)
 
 ## Como rodar o notebook
