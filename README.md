@@ -22,7 +22,7 @@ Neste trabalho, comparamos as matrículas da educação especial em **2015, 2020
    python -m jupyterlab
    ```
 
-2. Para rodar as perguntas 1 a 3, baixe as três planilhas do Inep e coloque-as na pasta do notebook. O [guia de requisitos e dados](Requisitos e Dados - Explicações.md) mostra o nome de cada arquivo.
+2. Para rodar as perguntas 1 a 3, baixe as três planilhas do Inep e coloque-as na pasta do notebook. O [guia de requisitos e dados](exp-requisitos.md) mostra o nome de cada arquivo.
 3. Abra o notebook no JupyterLab e execute a célula **IMPORTAÇÕES**. Depois, rode as células de cada pergunta na ordem. Se você quiser começar pela pergunta 4, pode seguir para ela mesmo que apareça o aviso sobre as planilhas das perguntas 1 a 3.
 
 Antes das perguntas 4, 5 e 7, precisamos rodar um comando separado. Clique com o botão direito no notebook e escolha **New Console for Notebook**. Esse console usa as mesmas variáveis do notebook. Rode cada comando com **Shift+Enter** e volte ao notebook para executar as células da pergunta.
