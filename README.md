@@ -4,14 +4,13 @@ Neste trabalho, comparamos as matrículas da educação especial em **2015, 2020
 
 **Alunos** — Ian Luca Marinho Aguiar, João Pedro Menezes Barros Dantas de Souza e Davi da Cunha Ribeiro.
 
+## Arquivos do trabalho
+
 - [Notebook final com as sete perguntas](Trabalho_A2%20-%20AEDV%20%283%29.ipynb)
+- [Declaração de contribuições](CONTRIBUICOES.md)
 - [Proposta do trabalho](Projeto%20e%20proposta/Proposta_Educacao_Especial_Brasil.pdf)
 - [Enunciado do projeto](Projeto%20e%20proposta/AED20262_projeto.pdf)
-
-## Fontes
-
-- Usamos as três edições do Inep para comparar as matrículas. [Sinopses Estatísticas da Educação Básica de 2015, 2020 e 2025](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/sinopses-estatisticas/educacao-basica) Nota: Como o tamanho dos arquivos é muito grande, é recomendada a instalação dos três arquivos pelo site do INEP e adicionados ao mesmo diretório em que o jupyter notebook irá trabalhar. O github não aguente mais que 25 MB!
-- Na pergunta 6, usamos os percentuais por estado da Tabela 3 (p. 35) e do Gráfico 18 (p. 67). [Censo Demográfico 2022 — IBGE](https://www.ibge.gov.br/biblioteca/visualizacao/livros/liv102178.pdf)
+- [Perguntas avulsas como material complementar](Perguntas%20Avulsas/)
 
 ## Como rodar o notebook
 
@@ -22,26 +21,12 @@ Neste trabalho, comparamos as matrículas da educação especial em **2015, 2020
    python -m jupyterlab
    ```
 
-2. Para rodar as perguntas 1 a 3, baixe as três planilhas do Inep e coloque-as na pasta do notebook. O [guia de requisitos e dados](exp-requisitos.md) mostra o nome de cada arquivo.
-3. Abra o notebook no JupyterLab e execute a célula **IMPORTAÇÕES**. Depois, rode as células de cada pergunta na ordem. Se você quiser começar pela pergunta 4, pode seguir para ela mesmo que apareça o aviso sobre as planilhas das perguntas 1 a 3.
+2. Baixe e extraia as três planilhas do Inep. Coloque os arquivos `.xlsx` na mesma pasta do notebook, com os nomes indicados no guia. [Requisitos e dados](exp-requisitos.md)
+3. Abra o notebook final no JupyterLab. No menu **Kernel**, escolha **Restart Kernel and Run All Cells** para rodar as sete perguntas em ordem.
 
-Antes das perguntas 4, 5 e 7, precisamos rodar um comando separado. Clique com o botão direito no notebook e escolha **New Console for Notebook**. Esse console usa as mesmas variáveis do notebook. Rode cada comando com **Shift+Enter** e volte ao notebook para executar as células da pergunta.
+Para rodar apenas as perguntas 4 a 7, execute a célula **IMPORTAÇÕES** e siga a partir da pergunta 4. O CSV e a planilha usados nas perguntas 4 e 5 já estão no repositório. As perguntas 6 e 7 trazem os dados no próprio notebook.
 
-**Pergunta 4.** Colocamos o nome do arquivo em `caminho`, que é a variável usada na leitura do CSV.
+## Fontes
 
-```python
-caminho = "pergunta4_dados_limpos_inep.csv"
-```
-
-**Pergunta 5.** Carregamos a planilha de novo porque as perguntas anteriores já usaram a variável `dados`.
-
-```python
-arquivo = pd.ExcelFile("base_limpa_pergunta5_inep_2015_2020_2025.xlsx")
-dados = pd.read_excel(arquivo, sheet_name="Base limpa", header=3)
-```
-
-**Pergunta 7.** Importamos o NumPy como `np` para calcular a reta do gráfico de dispersão.
-
-```python
-import numpy as np
-```
+- Comparamos os dados de matrícula das três edições do Inep. [Sinopses Estatísticas da Educação Básica de 2015, 2020 e 2025](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/sinopses-estatisticas/educacao-basica)
+- Na pergunta 6, usamos os percentuais por estado da Tabela 3 (p. 35) e do Gráfico 18 (p. 67). [Censo Demográfico 2022 — IBGE](https://www.ibge.gov.br/biblioteca/visualizacao/livros/liv102178.pdf)
